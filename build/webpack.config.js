@@ -24,7 +24,7 @@ module.exports = {
     './src/js/app.js',
   ],
   output: {
-    path: resolvePath(isCordova ? 'cordova/www' : 'www'),
+    path: resolvePath(isCordova ? 'cordova/www' : 'docs'),
     filename: 'js/app.js',
     publicPath: '',
     hotUpdateChunkFilename: 'hot/hot-update.js',
@@ -42,7 +42,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
-    contentBase: '/www/',
+    contentBase: '/docs/',
     disableHostCheck: true,
     watchOptions: {
       poll: 1000,
@@ -203,11 +203,11 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: resolvePath('src/static'),
-        to: resolvePath(isCordova ? 'cordova/www/static' : 'www/static'),
+        to: resolvePath(isCordova ? 'cordova/www/static' : 'docs/static'),
       },
       {
         from: resolvePath('src/manifest.json'),
-        to: resolvePath('www/manifest.json'),
+        to: resolvePath('docs/manifest.json'),
       },
     ]),
     ...(!isCordova ? [
