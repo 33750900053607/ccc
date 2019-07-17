@@ -123,26 +123,6 @@
       </div>
     </div>
 
-        <!-- Popup -->
-    <div class="popup" id="my-popup">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Popup</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Close</a>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-              <p>Popup content goes here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Add -->
     <div class="popup" id="my-add">
@@ -159,6 +139,17 @@
           <div class="page-content">
             <div class="block">
               <p>Popup content goes here.</p>
+              <div data-role="main" class="ui-content">
+                <p>
+                    Enter title and message for the reminder:
+                    <input type="text" id="title" placeholder="Title" />
+                    <input type="text" id="message" placeholder="Message" />
+                    Enter date and time to trigger reminder:
+                    <input type="date" id="date" />
+                    <input type="time" id="time" />
+                    <a target="_blank" href="javascript:add_reminder()" style="text-decoration: none"><button>Add</button></a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

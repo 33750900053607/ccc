@@ -21,10 +21,20 @@
     },
     "cordova-plugin-wkwebview-file-xhr": {
       "PACKAGE_NAME": "io.framework7.myapp"
+    },
+    "cordova-plugin-local-notification": {
+      "ANDROID_SUPPORT_V4_VERSION": "26.+",
+      "PACKAGE_NAME": "io.framework7.myapp"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "io.framework7.myapp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.framework7.myapp"
+    },
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "io.framework7.myapp"
     }
   }
